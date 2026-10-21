@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders-7/Görserl Gruplama</title>
+</head>
+<body>
+    <h1>
+        Görsel Gruplama
+    </h1>
+    <h2>
+        Doğa Dergisi: İlkbahar
+    </h2>
+    <!-- Resim ve açıklamasını tek bir çerçveye alıyoruz -->
+     <figure>
+        <img src="manzara.jpg" alt=" Güneşli bir ilkbahar sabahında yeşil orman manzarası" 
+        width="500"></img>
+         <figcaption>
+        Fotoğraf: İlkbaharın gelişini müjdeleyen orman manzarası
+     </figcaption>
+     </figure>
+      <figure>
+        <!-- figure sadece reim içinde kullanılmak zorunda değil, alıntılar, tablolar, grafikler
+         içinde kullanılabilir -->
+       
+         <figcaption>
+        Fotoğraf: İlkbaharın gelişini müjdeleyen orman manzarası
+     </figcaption>
+      <img src="manzara.jpg" alt=" Güneşli bir ilkbahar sabahında yeşil orman manzarası" 
+        width="500"></img>
+     </figure>
+     <!--Medya Kapsayıcısı (<figure>): Görseli ve ona ait altyazıyı tek bir bütün halinde saran ebeveyn (parent) etikettir.  -->
+        <!--Görsel Altyazısı (<figcaption>): Görselin açıklama veya kaynak metnini barındırır; daima <figure> içerisinde yer alır. asla dışarıya yazılmaz -->
+            <figure>
+                <!--  -->
+                <pre><code>console.log("Merhaba Dünya!")</code></pre>
+                <figcaption>
+                    kod 1: JavaScript Konsol Çıktısı
+                </figcaption>
+            </figure>
+    
+</body>
+</html>
