@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr"> styl
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders-8 / Sayfa içinde zıplamak ve çapalar</title>
+</head>
+<body>
+    <!-- Sayfa Başın Butonu -->
+    <h1 id="en-ust">
+        Sayfa İçi Gezinme
+    </h1>
+    <ul>
+        <!-- Sayfanın altına inen kullanıcının yukarı kaydırma (scroll) zahmetini 
+         önlemek için en üstteki ögeye bir id atanır; sayfa sonuna ise bu ID’yi hedefleyen 
+         (href="#en-ust") bir köprü eklenir: -->
+        <!-- Href içine hedef ID'yi kare (#) işareti ile yazıyoruz -->
+         <!-- # yanına sayfa ismi koymamızın nedeni; sayfada çıkan tıklanabilir kısmına tıkladığında 
+          link olarak verdiğin kısma geçer ve home kısmını en üste atar
+           -->
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+<!-- Sayfa içi kaydırma mesafesi oluşturmak için boşluklar -->
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <h2 id="hakkimizda">
+        Hakkımızda Bölümü
+     </h2>
+
+     <p>
+        Şirketimizin vizyon ve misyon yazıları burada yer alacak.
+     </p>
+
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+
+     <h2 id="hizmetler">
+        Hizmetlerimiz
+     </h2>
+     <p>
+        Web tasarım ve danışmanlık hzimetlerimiz.
+     </p>
+
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+
+     <h2 id="iletisim">
+        Bize Ulaşın
+     </h2>
+     <p>
+        Adresimiz. Bilişim Vadisi, Türkiye
+     </p>
+
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <br><br><br><br><br><br><br><br><br><br><br><br>
+     <!-- eğer a href içerisine en altta id olarak sadece # verirsek tıklandığında otomatik olarak 
+      yukarı çıkarır. genel görevidir. sayfanın en üstüne çıkmak için üstte
+      bir id tanımlamak şart değildir.
+      'Yukarı Çık' linkinin href niteliğine '#' (boş link) yazarsak 
+      bizi yine sayfanın üstüne götürür.-->
+     <p>
+        <a href="#en-ust">&uarr;Yukarı Çık</a>
+        <!-- burası buton kısmı -->
+     </p>
+     <!-- ul>li*5>a-yapılırsa eğer ul içinde 5 tane li oluuşturup li içerisinde de a href açar -->
+</body>
+</html>
