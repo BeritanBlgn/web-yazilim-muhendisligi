@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders-9 | Medya</title>
+</head>
+<body>
+    <h1>
+        Video ve Ses Oynatıcıları
+    </h1>
+    <h2>
+        Podcast Oynatıcısı
+    </h2>
+    <audio src="./audios/muzik.mp3" controls>
+        <!-- controls parametresi kullanılmak zorunda 
+         kullanılmazsa eğer ses video oynatılmaz. başlat durdur 
+         düğmeleri görünmez -->
+
+    </audio>
+    <h2>
+        Tanıtım Videosu
+    </h2>
+    <video src="./videos/ornek.mp4" width="500" controls autoplay muted poster>
+        <!-- poster parametresi ile görsel eklenebilir. video başlat butonuna basmadan önce videoda
+         eklediğimiz fotoğraf görünür başlat tuşuna bastığımızda ise video
+         görseli görmek için autoplay muted parametrelerini kaldırmak gerekir -->
+        <!-- wisth:100% yaparsak eğer sayfanın genişliğine göre boyut alır taşma yapmaz ekranı tam kaplar.
+         % işareti her zaman sayını sonuna konur. -->
+        <!-- autoplay tek başına kullanılamaz muted parametresi ile 
+         kullanılmak zorunda
+         autoplay eklediğimizde video otomatik oynatılır.
+         loop parametresi: sonsuz döngü demektir. video, ses bitince otomatik olarak 
+         tekrar başlatır.
+         videoları her zaman youtube üzerinden eklemekte fayda var. sitemizi yavaşlatıp durdurmaz. -->
+        Tarayıcınız video oynatıcıyı desteklemiyor.
+    </video>
+    <!-- bir diğer kullanım şekli -->
+    <video controls width="500">
+        <!-- önce mp4 çalıştırırlır eğer çalıştırılamazsa webm çalıştırılır 
+         o da çalıştırılamazsa tarayıcınız video oynatıcıyı desteklemiyor diye uyarır verir. -->
+        <source src="./videos/ornek.mp4"> 
+        <source src="./videos/ornek.webm">
+        Tarayıcınız video oynatıcıyı desteklemiyor.
+        <!-- her zaman birden fazla format eklemekte fayda var, biri oynatılamazsa
+         diğeri oynatılır.  -->
+    </video>
+</body>
+</html>

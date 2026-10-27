@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ders-9 | Medya</title>
+</head>
+<body>
+    <h1>
+        Video ve Ses Oynatıcıları
+    </h1>
+    <h2>
+        Podcast Oynatıcısı
+    </h2>
+    <audio src="muzik.mp3" controls>
+        <!-- controls parametresi kullanılmak zorunda 
+         kullanılmazsa eğer ses video oynatılmaz. başlat durdur 
+         düğmeleri görünmez -->
+
+    </audio>
+    <h2>
+        Tanıtım Videosu
+    </h2>
+    <video src="ornek.mp4" width="500" controls autoplay muted>
+        <!-- wisth:100% yaparsak eğer sayfanın genişliğine göre boyut alır taşma yapmaz ekranı tam kaplar.
+         % işareti her zaman sayını sonuna konur. -->
+        <!-- aoutoplay tek başına kullanılamaz muted parametresi ile 
+         kullanılmak zorunda.
+         loop parametresi: sonsuz döngü demektir. video, ses bitince otomatik olarak 
+         tekrar başlatır.
+         videoları her zaman youtube üzerinden eklemekte fayda var. sitemizi yavaşlatıp durdurmaz. -->
+        Tarayıcınız video oynatıcıyı desteklemiyor.
+    </video>
+    <video controls width="500">
+        <source>
+    </video>
+</body>
+</html>
